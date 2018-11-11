@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bev's Mama Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="check.js"></script>
+
+    <div id="page">
+      <div id="header">Welcome to Beverly's Mama Shop!</div>
+
+      <div style="display: flex; justify-content: center;">
+      <div id="menu">
+        <div class="menu-item">
+          <img src="imgs/apple.jpg" alt="apple" width="120">
+          Apple: 69c
+        </div>
+        <div class="menu-item">
+          <img src="imgs/orange.jpg" alt="orange" width="120">
+          Orange: 59c
+        </div>
+        <div class="menu-item">
+          <img src="imgs/banana.jpg" alt="banana" width="120">
+          Banana: 39c
+        </div>
+      </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div>
+        <!-- onsubmit triggers function to check if user has submitted at least one fruit -->
+        <form action="submit.php" onsubmit="return empty()" >
+        <div class="form-item">
+          <div>
+            Name:
+          </div>
+            <!-- required parameter set because name is a compulsory field -->
+            <input class="input" name="name_input" required/>
+        </div>
+        <div class="form-item">
+          <div>
+            Order:
+            <input class="input" name='apple_input' id='apple_input' oninput="sanitize_input(this.id)"/> apples
+            <input class="input" name="orange_input" id='orange_input' oninput="sanitize_input(this.id)"/> oranges
+            <input class="input" name="banana_input" id='banana_input' oninput="sanitize_input(this.id)"/> bananas
+          </div>
+        </div>
+        <div class="form-item">
+          <div>
+            Payment options:
+                <!-- required parameter set because payment option is a compulsory field -->
+                <!-- in this case, only 1 of the options needs to be set -->
+                <input type="radio" name="payment_choice" value="VISA" required> VISA
+                <input type="radio" name="payment_choice" value="Mastercard"> Mastercard
+                <input type="radio" name="payment_choice" value="Discover"> Discover
+            </div>
+          </div>
+      <br>
+      <br>
+
+      <div class="menu-item">
+          <div class="menu-item">
+              <div>
+                Total cost ($):
+              </div>
+                <input class="input" id="cost_output" onfocus="blur(this.id)"/>
+            </div>
+                <input type="submit" id="submit_button" value="Submit" />
+      </div>
+    </form>
+    </div>
+</body>
+</html>

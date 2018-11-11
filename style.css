@@ -1,0 +1,78 @@
+#page {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #778899;
+    padding : 30px;
+    border-radius: 25px;
+}
+
+#header {
+    text-align: center;
+    font-size: 30px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    padding : 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+    width: 50%;
+    
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-item {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.input {
+    padding : 5px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+#submit_button {
+    padding : 5px;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    width: 100px;
+}
+
+.receipt {
+    min-width: 250px;
+    width: 30%;
+    padding:20px 20px 20px 20px;
+}
+
+table {
+    width: 100%;
+    border: #778899;
+}
+  
+.firstCol {
+    width: 60%;
+    text-align: left;
+}
+
+.secondCol {
+    width: 20%;
+    text-align: left;
+}
+
+.thirdCol {
+    width: 20%;
+    text-align: left;
+}
